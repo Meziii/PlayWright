@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire Multi-Étapes</title>
+</head>
+<body>
+  <form id="multiStepForm">
+    <label for="nom">Nom :</label>
+    <input id="nom" type="text" />
+    <br />
+    <label for="email">Email :</label>
+    <input id="email" type="email" />
+    <br />
+    <button id="submit" type="button" onclick="submitForm()">Envoyer</button>
+  </form>
+  <p id="confirmation"></p>
+
+  <script>
+    function submitForm() {
+      document.getElementById('confirmation').textContent = 'Merci !';
+    }
+  </script>
+</body>
+</html>

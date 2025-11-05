@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Assertions Dynamiques</title>
+</head>
+<body>
+
+  <button id="toggleElement" onclick="toggle()">Toggle Élément</button>
+  <div id="dynamic">Visible</div>
+
+  <script>
+    function toggle() {
+      const el = document.getElementById('dynamic');
+      if (el.style.display === 'none') {
+        el.style.display = 'block';
+      } else {
+        el.style.display = 'none';
+      }
+    }
+  </script>
+
+</body>
+</html>

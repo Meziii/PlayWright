@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Iframe</title>
+</head>
+<body>
+
+  <h2>Test avec Iframe</h2>
+
+  <iframe name="frame1" srcdoc="
+    <html>
+      <body>
+        <input id='inputFrame' type='text' />
+        <p id='success'></p>
+        <script>
+          const input = document.getElementById('inputFrame');
+          input.addEventListener('input', () => {
+            document.getElementById('success').textContent = 'Réussi';
+          });
+        </script>
+      </body>
+    </html>
+  " width="300" height="200"></iframe>
+
+</body>
+</html>

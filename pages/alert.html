@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Alert Test</title>
+</head>
+<body>
+  <button id="showAlert" onclick="showAlert()">Afficher Alerte</button>
+  <div id="message"></div>
+
+  <script>
+    function showAlert() {
+      alert('Attention !');
+      document.getElementById('message').textContent = 'Alerte acceptée';
+    }
+  </script>
+</body>
+</html>
