@@ -28,7 +28,7 @@ Copier le code
 npx http-server ./pages -p 8080
 Le projet sera accessible à : http://localhost:8080
 
-### 🔹 Exécution des tests
+### ⚡ Exécution des tests
 Lancer tous les tests :
 
 bash
