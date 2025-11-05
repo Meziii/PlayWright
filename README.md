@@ -1,59 +1,55 @@
-# PlayWright
-Ce projet contient des tests automatisés pour des scénarios web avec Playwright.
+Ce projet contient des tests automatisés pour différents scénarios web réalisés avec Playwright. Il permet de vérifier que les pages et les interactions utilisateur fonctionnent correctement.
 
 Prérequis
 
 Node.js 18 ou plus
 
-Git (optionnel pour versionner le projet)
+Git (optionnel)
 
-Visual Studio Code ou autre éditeur
+Un éditeur de code (Visual Studio Code recommandé)
 
 Installation
 
-Cloner ou télécharger le projet
+Clonez ou téléchargez le projet
 
-Ouvrir un terminal dans le dossier du projet
+Ouvrez un terminal dans le dossier du projet
 
-Installer les dépendances :
+Installez les dépendances :
 
 npm install
 
 Lancer le serveur local
 
-Certains tests nécessitent de servir les pages HTML localement :
+Certains tests utilisent des pages HTML locales. Pour les servir :
 
 npx http-server ./pages -p 8080
 
 
-Le projet sera accessible à l’adresse http://localhost:8080.
+Le projet sera accessible à : http://localhost:8080
 
-Exécuter les tests
+Exécution des tests
 
-Pour lancer tous les tests :
+Lancer tous les tests :
 
 npx playwright test
 
 
-Pour exécuter un test spécifique :
+Lancer un test spécifique :
 
 npx playwright test tests/nom_du_test.spec.js
 
 
-Pour ouvrir le rapport HTML des tests :
+Voir le rapport HTML des tests :
 
 npx playwright show-report
 
-Navigateurs
-
-Playwright permet de tester sur plusieurs navigateurs :
-
+Tester sur plusieurs navigateurs
 npx playwright test --project=chromium
 npx playwright test --project=firefox
 npx playwright test --project=webkit
 
 Notes
 
-Les tests attendent automatiquement que les éléments soient prêts.
+Les tests attendent automatiquement que les éléments soient visibles avant d’interagir
 
-Les iframes et éléments dynamiques sont gérés avec des fonctions waitForSelector.
+Les iframes et éléments dynamiques sont gérés via waitForSelector pour garantir la stabilité des tests
