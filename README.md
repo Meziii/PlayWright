@@ -28,7 +28,7 @@ Copier le code
 npx http-server ./pages -p 8080
 Le projet sera accessible à : http://localhost:8080
 
-## 🔹 Exécution des tests
+### 🔹 Exécution des tests
 Lancer tous les tests :
 
 bash
@@ -44,13 +44,13 @@ Afficher le rapport HTML des tests :
 bash
 Copier le code
 npx playwright show-report
-## 🔹 Tester sur plusieurs navigateurs
+### 🔹 Tester sur plusieurs navigateurs
 bash
 Copier le code
 npx playwright test --project=chromium
 npx playwright test --project=firefox
 npx playwright test --project=webkit
-## 🔹 Notes importantes
+###🔹 Notes importantes
 Les tests attendent automatiquement que les éléments soient visibles avant d’interagir
 
 Les iframes et éléments dynamiques sont gérés via waitForSelector pour garantir la stabilité des tests
