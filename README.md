@@ -50,7 +50,7 @@ Copier le code
 npx playwright test --project=chromium
 npx playwright test --project=firefox
 npx playwright test --project=webkit
-###🔹 Notes importantes
+##🔹 Notes importantes
 Les tests attendent automatiquement que les éléments soient visibles avant d’interagir
 
 Les iframes et éléments dynamiques sont gérés via waitForSelector pour garantir la stabilité des tests
